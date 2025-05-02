@@ -1,0 +1,10 @@
+.back-button {
+  color: var(--text-primary);
+  transition: all var(--transition-speed) ease;
+  padding: 8px;
+  margin: -8px;
+}
+
+.back-button:hover {
+  background-color: var(--hover-color);
+}

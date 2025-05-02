@@ -1,0 +1,112 @@
+.share-options-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  animation: fadeIn var(--transition-speed) ease-out;
+}
+
+.share-title {
+  color: var(--text-primary);
+  font-weight: 600 !important;
+  text-align: center;
+  margin-bottom: 2rem !important;
+}
+
+.code-display {
+  width: 100%;
+  max-width: 400px;
+  background-color: var(--surface-color);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: var(--shadow-md);
+  text-align: center;
+}
+
+.code-label {
+  color: var(--text-secondary);
+  margin-bottom: 1rem !important;
+}
+
+.code-digits {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.code-digit {
+  background-color: var(--primary-light);
+  color: var(--text-primary);
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  min-width: 40px;
+  box-shadow: var(--shadow-sm);
+}
+
+.qr-button {
+  padding: 1rem 2rem !important;
+  border-radius: 25px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  background: linear-gradient(45deg, var(--primary-color), var(--primary-light)) !important;
+  color: var(--text-primary) !important;
+  transition: all var(--transition-speed) ease-in-out !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+.qr-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg) !important;
+  background: linear-gradient(45deg, var(--primary-light), var(--primary-color)) !important;
+}
+
+.nearby-devices {
+  width: 100%;
+  max-width: 400px;
+}
+
+.devices-title {
+  color: var(--text-primary);
+  margin-bottom: 1rem !important;
+}
+
+.device-item {
+  padding: 1rem !important;
+  transition: all var(--transition-speed) ease !important;
+}
+
+.device-item:hover {
+  background-color: var(--hover-color) !important;
+}
+
+.device-icon {
+  color: var(--primary-color) !important;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .share-options-container {
+    padding: 1rem;
+  }
+
+  .share-title {
+    font-size: 1.8rem !important;
+  }
+
+  .code-display {
+    padding: 1.5rem;
+  }
+
+  .code-digit {
+    padding: 0.8rem;
+    font-size: 1.2rem !important;
+    min-width: 30px;
+  }
+
+  .qr-button {
+    padding: 0.8rem 1.5rem !important;
+  }
+}

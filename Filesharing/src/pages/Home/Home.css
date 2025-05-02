@@ -1,0 +1,114 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: var(--background-color);
+  animation: fadeIn var(--transition-speed) ease-out;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.settings-button,
+.profile-button {
+  background-color: var(--surface-color) !important;
+  color: var(--text-primary) !important;
+  transition: all var(--transition-speed) ease !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.settings-button:hover,
+.profile-button:hover {
+  background-color: var(--hover-color) !important;
+  box-shadow: var(--shadow-md) !important;
+  transform: translateY(-2px);
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.file-manager-logo {
+  font-size: 2.5rem !important;
+  color: var(--primary-color);
+  animation: float 3s ease-in-out infinite;
+}
+
+.main-actions {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.action-button {
+  width: 100%;
+  max-width: 300px;
+  padding: 1.5rem !important;
+  border-radius: 15px !important;
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  transition: all var(--transition-speed) ease-in-out !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+.send-button {
+  background: linear-gradient(45deg, var(--primary-light), var(--primary-color)) !important;
+}
+
+.receive-button {
+  background: linear-gradient(45deg, var(--primary-light), var(--primary-color)) !important;
+}
+
+.action-button:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg) !important;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .home-container {
+    padding: 0.5rem;
+  }
+
+  .header {
+    padding: 0.5rem;
+  }
+
+  .main-actions {
+    padding: 1rem;
+  }
+
+  .action-button {
+    padding: 1.2rem !important;
+    font-size: 1.1rem !important;
+  }
+
+  .file-manager-logo {
+    font-size: 2rem !important;
+  }
+}

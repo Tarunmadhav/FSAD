@@ -1,0 +1,149 @@
+.transfer-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: var(--background-color);
+}
+
+.transfer-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  right: 0;
+  color: white !important;
+}
+
+.header-title {
+  color: white;
+  font-weight: 600;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.section-title {
+  color: white;
+  margin-bottom: 1rem !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.history-icon {
+  font-size: 1.2rem;
+}
+
+.current-transfers {
+  margin-bottom: 2rem;
+}
+
+.transfer-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 1rem !important;
+}
+
+.transfer-info {
+  width: 100%;
+}
+
+.filename {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.transfer-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.size, .speed {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.progress-bar {
+  height: 6px !important;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.progress-bar .MuiLinearProgress-bar {
+  background-color: var(--primary-color);
+}
+
+.section-divider {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 2rem 0 !important;
+}
+
+.history-item {
+  padding: 1rem !important;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.history-item .MuiListItemText-primary {
+  color: white;
+}
+
+.history-item .MuiListItemText-secondary {
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  gap: 1rem;
+}
+
+.history-size, .history-date {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.transfer-type {
+  text-transform: capitalize;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.transfer-type.sent {
+  background-color: rgba(76, 175, 80, 0.2);
+  color: #4CAF50;
+}
+
+.transfer-type.received {
+  background-color: rgba(33, 150, 243, 0.2);
+  color: #2196F3;
+}
+
+@media (max-width: 600px) {
+  .transfer-container {
+    padding: 0.5rem;
+  }
+
+  .transfer-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .header-title {
+    font-size: 1.5rem !important;
+  }
+
+  .section-title {
+    font-size: 1.2rem !important;
+  }
+
+  .filename {
+    font-size: 1rem !important;
+  }
+
+  .transfer-details {
+    font-size: 0.8rem !important;
+  }
+}

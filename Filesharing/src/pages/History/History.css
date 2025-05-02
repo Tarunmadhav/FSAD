@@ -1,0 +1,114 @@
+.history-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: var(--background-color);
+}
+
+.header-section {
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.history-list {
+  width: 100%;
+  max-width: 800px;
+  background-color: var(--surface-color);
+  border-radius: 10px;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.back-button {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-primary);
+}
+
+.history-title {
+  flex: 1;
+  text-align: center;
+  color: var(--text-primary);
+  font-weight: 600 !important;
+}
+
+.history-item {
+  padding: 1rem !important;
+  transition: all var(--transition-speed) ease !important;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.history-item:hover {
+  background-color: var(--hover-color);
+}
+
+.history-item.sent .file-name {
+  color: var(--primary-color);
+}
+
+.history-item.received .file-name {
+  color: var(--secondary-color);
+}
+
+.file-name {
+  font-weight: 500 !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.file-info {
+  color: var(--text-secondary) !important;
+  font-size: 0.875rem !important;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.item-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.action-button {
+  color: var(--text-secondary) !important;
+  transition: all var(--transition-speed) ease !important;
+}
+
+.action-button:hover {
+  color: var(--primary-color) !important;
+  background-color: var(--hover-color) !important;
+}
+
+.action-button.delete:hover {
+  color: var(--error-color) !important;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .history-container {
+    padding: 1rem;
+  }
+
+  .history-title {
+    font-size: 1.8rem !important;
+  }
+
+  .history-item {
+    padding: 0.75rem !important;
+  }
+
+  .file-info {
+    font-size: 0.75rem !important;
+  }
+}

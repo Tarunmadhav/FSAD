@@ -1,0 +1,88 @@
+:root {
+  --primary-color: #2196f3;
+  --primary-light: #64b5f6;
+  --primary-dark: #1976d2;
+  --secondary-color: #424242;
+  --text-primary: #ffffff;
+  --text-secondary: #b0bec5;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --transition-speed: 0.3s;
+  --background-color: #121212;
+  --surface-color: #1e1e1e;
+  --hover-color: rgba(255, 255, 255, 0.08);
+  --selected-color: rgba(255, 255, 255, 0.16);
+  --card-bg: #1e1e1e;
+  --card-hover: #2d2d2d;
+  --gradient-primary: linear-gradient(45deg, var(--primary-color), var(--primary-light));
+  --gradient-secondary: linear-gradient(45deg, var(--secondary-color), var(--primary-dark));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  color: var(--text-primary);
+  transition: background-color var(--transition-speed) ease;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: var(--background-color);
+  transition: all var(--transition-speed) ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 10px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { 
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn var(--transition-speed) ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn var(--transition-speed) ease-out;
+}
+
+.hover-scale {
+  transition: transform var(--transition-speed) ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+}

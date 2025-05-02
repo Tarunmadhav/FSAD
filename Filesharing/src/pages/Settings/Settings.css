@@ -1,0 +1,70 @@
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  max-width: 800px !important;
+}
+
+.settings-title {
+  margin-bottom: 2rem !important;
+  color: #333;
+  font-weight: 600 !important;
+  text-align: center;
+}
+
+.settings-content {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.settings-form {
+  width: 100%;
+}
+
+.settings-label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+.settings-label svg {
+  color: #1976d2;
+  font-size: 1.8rem;
+}
+
+.settings-switch {
+  margin-right: 1rem !important;
+}
+
+.MuiDivider-root {
+  margin: 0.5rem 0 !important;
+}
+
+.MuiFormControlLabel-root {
+  margin: 0.5rem 0 !important;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .settings-container {
+    padding: 1rem;
+  }
+
+  .settings-title {
+    font-size: 1.8rem !important;
+  }
+
+  .settings-label svg {
+    font-size: 1.5rem;
+  }
+
+  .settings-content {
+    padding: 0.5rem;
+  }
+}
